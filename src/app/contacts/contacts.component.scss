@@ -1,0 +1,85 @@
+.container{
+    padding: 100px 0px;
+    .section{
+        box-shadow: 0px 2px 14px #ccc;
+        .search{
+            padding: 9px 15px;
+            background-color: lightgray;
+            border-radius: 10px 10px 0px 0px;
+            input{
+                border-radius: 300px;
+                outline: none;
+                text-align: center;
+                position: relative;
+            }
+            i{
+                position: absolute;
+                top:18px;
+                left: 36%;;
+            }
+        }
+        .addContact{
+            border-bottom: 1px solid lightgray;
+            background-color: #f2f2f2;
+            .addNewContact{
+                padding: 15px 15px 0px 15px;
+                h2{
+                    font-size: 20px;
+                }
+            }
+            .addIcon{
+                padding: 15px 15px 0px 15px;
+                i{
+                    float: right;
+                    cursor: pointer;
+                    font-size: 20px;
+                }
+            }
+        }
+        
+        .latest{
+            padding-top: 10px;
+            padding-left: 15px;
+            background-color: #f2f2f2;
+        }
+        .all{
+            height: 600px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            .latestContacts{
+                width: 100%;
+            }
+        
+            .allContacts{
+                width: 100%;     
+            }
+            .media{
+                border-bottom: 1px solid lightgray;
+                padding: 15px 15px 0px 15px;
+                p{
+                    color: #aaa;
+                }
+                img{
+                    width: 50px;
+                    border-radius: 100%;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+      
+      /* Track */
+    ::-webkit-scrollbar-track {
+        background: transparent; 
+    }
+       
+      /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #ccc; 
+    }
+   
+}

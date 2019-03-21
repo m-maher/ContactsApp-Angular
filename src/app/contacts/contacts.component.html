@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-8 mx-auto">
+      <div class="section">
+        <div class="row">
+          <div class="col-12">
+            <div class="search">
+                <input type="text" class="form-control" [(ngModel)]="term" placeholder="Search Contacts">
+            </div>
+          </div>
+      
+          <div class="col-12">
+            <div class="addContact">
+              <div class="row">
+                <div class="col-6">
+                  <div class="addNewContact">
+                      <h2>Add New Contact</h2>
+                  </div>
+                </div>
+            
+                <div class="col-6">
+                  <div class="addIcon">
+                      <i class="fas fa-plus float-right" routerLink="/addContact"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12">
+            <div class="latest">
+                <p>Latest Contacts</p>
+            </div>
+          </div>
+  
+          <div class="col-12">
+            <div class="all">
+              <div class="row">
+                <div class="latestContacts">
+                  <div class="col-12">
+                    <div class="media"  *ngFor="let i of recentContactsData.data | slice:0:2 ">
+                      <img [src]='i.image'>
+                      <div class="media-body">
+                        <h5>{{i.firstName}}</h5>
+                        <p>{{i.email}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="allContacts">
+                  <div class="col-12">
+                    <div class="media"  *ngFor="let i of contactsData.data |filter:term">
+                      <img [src]='i.image'>
+                      <div class="media-body">
+                        <h5>{{i.firstName}}</h5>
+                        <p>{{i.email}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
