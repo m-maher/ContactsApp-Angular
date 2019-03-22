@@ -1,61 +1,86 @@
 .container {
   padding: 100px 0px;
   /* Track */
-  /* Handle */ }
-  .container .section {
-    box-shadow: 0px 2px 14px #ccc; }
-    .container .section .search {
-      padding: 9px 15px;
-      background-color: lightgray;
-      border-radius: 10px 10px 0px 0px; }
-      .container .section .search input {
-        border-radius: 300px;
-        outline: none;
-        text-align: center;
-        position: relative; }
-      .container .section .search i {
-        position: absolute;
-        top: 18px;
-        left: 36%; }
-    .container .section .addContact {
-      border-bottom: 1px solid lightgray;
-      background-color: #f2f2f2; }
-      .container .section .addContact .addNewContact {
-        padding: 15px 15px 0px 15px; }
-        .container .section .addContact .addNewContact h2 {
-          font-size: 20px; }
-      .container .section .addContact .addIcon {
-        padding: 15px 15px 0px 15px; }
-        .container .section .addContact .addIcon i {
-          float: right;
-          cursor: pointer;
-          font-size: 20px; }
-    .container .section .latest {
-      padding-top: 10px;
-      padding-left: 15px;
-      background-color: #f2f2f2; }
-    .container .section .all {
-      height: 600px;
-      overflow-y: scroll;
-      overflow-x: hidden; }
-      .container .section .all .latestContacts {
-        width: 100%; }
-      .container .section .all .allContacts {
-        width: 100%; }
-      .container .section .all .media {
-        border-bottom: 1px solid lightgray;
-        padding: 15px 15px 0px 15px; }
-        .container .section .all .media p {
-          color: #aaa; }
-        .container .section .all .media img {
-          width: 50px;
-          border-radius: 100%;
-          margin-right: 15px; }
-  .container ::-webkit-scrollbar {
-    width: 5px; }
-  .container ::-webkit-scrollbar-track {
-    background: transparent; }
-  .container ::-webkit-scrollbar-thumb {
-    background: #ccc; }
+  /* Handle */
+}
+.container .section {
+  box-shadow: 0px 2px 14px #ccc;
+}
+.container .section .search {
+  padding: 9px 15px;
+  background-color: lightgray;
+  border-radius: 10px 10px 0px 0px;
+}
+.container .section .search input {
+  border-radius: 300px;
+  outline: none;
+  text-align: center;
+  position: relative;
+}
+.container .section .search i {
+  position: absolute;
+  top: 18px;
+  left: 36%;
+}
+.container .section .addContact {
+  border-bottom: 1px solid lightgray;
+  background-color: #f2f2f2;
+}
+.container .section .addContact .addNewContact {
+  padding: 15px 15px 0px 15px;
+}
+.container .section .addContact .addNewContact h2 {
+  font-size: 20px;
+}
+.container .section .addContact .addIcon {
+  padding: 15px 15px 0px 15px;
+}
+.container .section .addContact .addIcon i {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+.container .section .latest {
+  padding-top: 10px;
+  padding-left: 15px;
+  background-color: #f2f2f2;
+}
+.container .section .all {
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.container .section .all .latestContacts {
+  width: 100%;
+}
+.container .section .all .break {
+  background-color: #f2f2f2;
+  height: 20px;
+  width: 100%;
+}
+.container .section .all .allContacts {
+  width: 100%;
+}
+.container .section .all .media {
+  border-bottom: 1px solid lightgray;
+  padding: 15px 15px 0px 15px;
+}
+.container .section .all .media p {
+  color: #aaa;
+}
+.container .section .all .media img {
+  width: 50px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+.container ::-webkit-scrollbar {
+  width: 5px;
+}
+.container ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.container ::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
 
 /*# sourceMappingURL=contacts.component.css.map */

@@ -12,7 +12,11 @@ export class ContactsComponent implements OnInit {
 
   recentContactsData:any = {}
 
+  term:any;
+
   constructor(private _contacts: ContactsService) { }
+
+  // function to get all contacts data from contacts service
 
   getContacts(){
     return this._contacts.getContactsData().subscribe((data)=>{
@@ -20,11 +24,15 @@ export class ContactsComponent implements OnInit {
     })
   }
 
+  // function to get recent contacts data from contacts service
+
   getRecentContacts(){
     return this._contacts.getRecentContactsData().subscribe((data)=>{
       this.recentContactsData = data;
     })
   }
+
+  // Call the two function when use this class 
 
   ngOnInit() {
     this.getContacts()

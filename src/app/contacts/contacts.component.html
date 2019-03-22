@@ -42,19 +42,21 @@
                     <div class="media"  *ngFor="let i of recentContactsData.data | slice:0:2 ">
                       <img [src]='i.image'>
                       <div class="media-body">
-                        <h5>{{i.firstName}}</h5>
+                        <h5>{{i.firstName}} {{i.lastName}}</h5>
                         <p>{{i.email}}</p>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="break"></div>
               
                 <div class="allContacts">
                   <div class="col-12">
                     <div class="media"  *ngFor="let i of contactsData.data |filter:term">
                       <img [src]='i.image'>
                       <div class="media-body">
-                        <h5>{{i.firstName}}</h5>
+                        <h5>{{i.firstName}} {{i.lastName}}</h5>
                         <p>{{i.email}}</p>
                       </div>
                     </div>

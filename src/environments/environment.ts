@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  contactsData:'../assets/contacts.json',
-  recentContactsData:'../assets/recent-contact.json'
+  contactsUrl:'../assets/contacts.json',
+  recentContactsUrl:'../assets/recent-contact.json'
 };
 
 /*

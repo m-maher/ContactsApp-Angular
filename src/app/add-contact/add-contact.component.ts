@@ -20,11 +20,19 @@ export class AddContactComponent implements OnInit {
 
   constructor(private _router: Router , private _addContact: AddContactService) { }
 
+  // function to add a new contact to the app after call it through add-contacts service
+
   addContacts(){
+    console.log(this.addContactData)
     return this._addContact.addContact(this.addContactData).subscribe((data)=>{
-      console.log(data)
+      console.log(data);
+      
     },()=>{
-      this._router.navigate(['contacts'])
+      if(this.addContactData != null){
+        this._router.navigate(['contacts'])
+      }else{
+        alert('Please enter all required data')
+      }
     })
   }
 
