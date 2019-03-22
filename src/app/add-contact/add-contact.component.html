@@ -8,40 +8,38 @@
             <div class="col-12">
                 <h1>Add a New Contact</h1>
             </div>
-
+  
+            <div class="col-4 mx-auto text-center">
+                <label class="photo">
+                    <img id="choose" src="../../assets/user.png">
+                    <span>Add Photo</span>
+                    <input type="file" onchange="readURL(this)" name="image" [(ngModel)]="addContactData.image" required>
+                </label>
+            </div>
             
-              <div class="col-4 mx-auto text-center">
-                  <label class="photo">
-                      <img id="choose" src="../../assets/user.png">
-                      <span>Add Photo</span>
-                      <input type="file" onchange="readURL(this)" name="image" [(ngModel)]="addContactData.image" required>
-                  </label>
-              </div>
-              
-              <div class="col-12">
-                <input type="text" class="form-control" name="firstName" [(ngModel)]="addContactData.firstName"  placeholder="First name" required  pattern = "^[A-Za-z]{3,9}$">
-              </div>
-              <div class="col-12">
-                <input type="text" class="form-control" name="lastName" [(ngModel)]="addContactData.lastName" placeholder="Last name" required  pattern = "^[A-Za-z]{3,9}$">
-              </div>
-              <div class="col-2">
-                <input type="number" class="form-control" name="code" [(ngModel)]="addContactData.code" placeholder="+44" required  pattern = "^[0-9]{3}$">
-              </div>
-              <div class="col-10">
-                <input type="number" class="form-control" name="number" [(ngModel)]="addContactData.number" placeholder="567 2249" required  pattern = "^[0-9]{11}$">
-              </div>
-              <div class="clear"></div>
-              <div  class="col-12">
-                <input type="email" class="form-control" name="email" [(ngModel)]="addContactData.email" placeholder="Email address" required  pattern = "^\w+[-_.]{0,1}\w+@[a-z0-9]+(\.[a-z]{2,6}){1,3}$">
-              </div>
-              <div class="col-12">
-                <button class="btn btn-success btn-block" (click)="addContacts()">Add Contact</button>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-primary btn-block" routerLink="/contacts">Cancel</button>
-              </div>
+            <div class="col-12">
+              <input type="text" class="form-control" name="firstName" [(ngModel)]="addContactData.firstName"  placeholder="First name" required  pattern = "^[A-Za-z]{3,9}$">
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control" name="lastName" [(ngModel)]="addContactData.lastName" placeholder="Last name" required  pattern = "^[A-Za-z]{3,9}$">
+            </div>
+            <div class="col-2">
+              <input type="number" class="form-control" name="code" [(ngModel)]="addContactData.code" placeholder="+44" required  pattern = "^[0-9]{3}$">
+            </div>
+            <div class="col-10">
+              <input type="number" class="form-control" name="number" [(ngModel)]="addContactData.number" placeholder="567 2249" required  pattern = "^[0-9]{11}$">
+            </div>
+            <div class="clear"></div>
+            <div  class="col-12">
+              <input type="email" class="form-control" name="email" [(ngModel)]="addContactData.email" placeholder="Email address" required  pattern = "^\w+[-_.]{0,1}\w+@[a-z0-9]+(\.[a-z]{2,6}){1,3}$">
+            </div>
+            <div class="col-12">
+              <button class="btn btn-success btn-block" (click)="addContacts()">Add Contact</button>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary btn-block" routerLink="/contacts">Cancel</button>
+            </div>
           
-                
           </div>
         </div>
       </div>
