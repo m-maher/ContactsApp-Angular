@@ -53,7 +53,7 @@
               
                 <div class="allContacts">
                   <div class="col-12">
-                    <div class="media"  *ngFor="let i of contactsData.data |filter:term">
+                    <div class="media"  *ngFor="let i of contactsData |filter:term">
                       <img [src]='i.image'>
                       <div class="media-body">
                         <h5>{{i.firstName}} {{i.lastName}}</h5>
